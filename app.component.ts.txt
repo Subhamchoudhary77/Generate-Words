@@ -1,0 +1,36 @@
+import { Component } from '@angular/core';
+import arrayWords from "../utils/words"
+import arrayCountry from "../utils/Country"
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'word-generator';
+
+  words = '';
+  limit = 10;
+
+  
+  country = '';
+
+  handleSlideChange(newLimit: number){
+      this.limit=newLimit;
+  }
+
+  handleSlideCountry(){
+    this.limit = Math.ceil(Math.random()*249);
+  }
+
+
+  generate(){
+    this.words = arrayWords.slice(0, this.limit).join(' ');
+  }
+
+  generateRandom(){
+    this.country = arrayCountry.slice(0, this.limit).join(' ');
+  }
+
+}

@@ -1,0 +1,20 @@
+// some random country
+
+
+export default [
+    `India`,
+    'America',
+    `South Korea`,
+    `New Zealand`,
+    `Australia`,
+    `France`,
+    `South Africa`,
+    `Bangladesh`,
+    `Sri Lanka`,
+    `England`,
+    `Japan`,
+    `China`,
+    `Pakistan`,
+    'North Korea'
+  ];
+  
